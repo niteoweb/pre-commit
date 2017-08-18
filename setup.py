@@ -31,9 +31,6 @@ setup(
         'pre_commit': [
             'resources/hook-tmpl',
             'resources/pre-push-tmpl',
-            'resources/rbenv.tar.gz',
-            'resources/ruby-build.tar.gz',
-            'resources/ruby-download.tar.gz',
             'resources/empty_template/*',
             'resources/empty_template/.npmignore',
         ],
@@ -42,10 +39,8 @@ setup(
         'aspy.yaml',
         'cached-property',
         'identify>=1.0.0',
-        'nodeenv>=0.11.1',
         'pyyaml',
         'six',
-        'virtualenv',
     ],
     entry_points={
         'console_scripts': [
