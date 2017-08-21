@@ -64,4 +64,5 @@ class Runner(object):
 
     @cached_property
     def store(self):
-        return Store()
+        pre_commit_home = os.path.join(self.git_root, '.pre-commit')
+        return Store(directory=pre_commit_home)
