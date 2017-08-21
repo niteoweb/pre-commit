@@ -1,3 +1,11 @@
+0.16.3+7139a47
+==============
+
+- Force pre-commit home directory location to git root directory.
+- Ensure sys.path is exported to git hooks so they can find pre-commit.
+- Remove virtualenv, node and ruby env from requirements so they are not
+  installed and pre-commit only uses local hooks.
+
 0.16.3
 ======
 - autoupdate attempts to maintain config formatting.
