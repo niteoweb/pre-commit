@@ -69,6 +69,7 @@ def install(
         skip_on_missing_conf = 'true' if skip_on_missing_conf else 'false'
         contents = io.open(resource_filename('hook-tmpl')).read().format(
             sys_executable=sys.executable,
+            sys_path=':'.join(sys.path),
             hook_type=hook_type,
             hook_specific=hook_specific_contents,
             skip_on_missing_conf=skip_on_missing_conf,

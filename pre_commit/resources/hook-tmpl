@@ -9,6 +9,7 @@ popd > /dev/null
 retv=0
 args=""
 
+export PYTHONPATH='{sys_path}'
 ENV_PYTHON='{sys_executable}'
 SKIP_ON_MISSING_CONF={skip_on_missing_conf}
 
